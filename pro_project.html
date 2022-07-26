@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        #header{
+            background-color: #2f21f3;
+        }
+        #projects{
+            background-image: url("shankara.jpg");
+            background-attachment: fixed;
+        }
+        #about{
+            /* background-image: url("bgimg2.jpg"); */
+            background-attachment: fixed;
+            background-repeat:no-repeat;
+            color: black;
+        }
+        #wlcm{
+            text-decoration: underline overline #2f21f3;
+        }
+        b1{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 3px 4px 4px black,1px 1px 2px black;
+        }
+        #x{
+            align-items: center;
+        }
+        #prj{
+            border-radius: 8px;
+        }
+        #myimg{
+            border-radius: 8px;
+        }
+        #abc{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            /* min-height: 100vh; */
+            /* background: #031321; */
+            font-family: cursive;
+        }
+        a1{
+            position:relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: #2196f3;
+            text-transform:uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            transform: 0.2%;
+            /* border-radius: 20px; */
+        }
+        a1:hover{
+            color: #255784;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+            transition-delay: 0.80s;
+        }
+        a1 span{
+            position: absolute;
+            display: block;
+        }
+        a1 span:nth-child(1){
+            top:0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg,transparent,#2196f3);
+            
+        }
+        a1:hover span:nth-child(1){
+            left: 100%;
+            transition: 0.75s;
+        }
+        a1 span:nth-child(3){
+            bottom:0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg,transparent,#2196f3);
+            
+        }
+        a1:hover span:nth-child(3){
+            right: 100%;
+            transition: 0.75s;
+            transition-delay: 0.30s;
+        }
+        a1 span:nth-child(2){
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg,transparent,#2196f3);
+            
+        }
+        a1:hover span:nth-child(2){
+            top: 100%;
+            transition: 0.75s;
+            transition-delay: 0.15s;
+        }
+        a1 span:nth-child(4){
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg,transparent,#2196f3);
+            
+        }
+        a1:hover span:nth-child(4){
+            bottom: 100%;
+            transition: 0.75s;
+            transition-delay: 0.45s;
+        }
+        #abc4{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            /* min-height: 100vh; */
+            /* background: #031321; */
+            font-family: cursive;
+        }
+        a4{
+            position:relative;
+            display: inline-block;
+            /* padding: 15px 30px; */
+            color: #ffff;
+            /* text-transform:uppercase; */
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            transform: 0.2%;
+            /* border-radius: 20px; */
+        }
+        a4:hover{
+            border-radius: 8px;
+            color: #255784;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+            transition-delay: 0s;
+        }
+        a5{
+            position:relative;
+            display: inline-block;
+            /* padding: 15px 30px; */
+            color: #ffff;
+            /* text-transform:uppercase; */
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            transform: 0.2%;
+            /* border-radius: 20px; */
+        }
+        a5:hover{
+            border-radius: 8px;
+            color: #255784;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+            transition-delay: 0s;
+        }a6{
+            position:relative;
+            display: inline-block;
+            /* padding: 15px 30px; */
+            color: #ffff;
+            /* text-transform:uppercase; */
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            transform: 0.2%;
+            /* border-radius: 20px; */
+        }
+        a6:hover{
+            border-radius: 8px;
+            color: #255784;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+            transition-delay: 0s;
+        }a7{
+            position:relative;
+            display: inline-block;
+            /* padding: 15px 30px; */
+            color: #ffff;
+            /* text-transform:uppercase; */
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            transform: 0.2%;
+            /* border-radius: 20px; */
+        }
+        a7:hover{
+            border-radius: 8px;
+            color: #255784;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+            transition-delay: 0s;
+        }a8{
+            position:relative;
+            display: inline-block;
+            /* padding: 15px 30px; */
+            color: #ffff;
+            /* text-transform:uppercase; */
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 24px;
+            overflow: hidden;
+            transform: 0.2%;
+            /* border-radius: 20px; */
+        }
+        a8:hover{
+            border-radius: 8px;
+            color: #255784;
+            background: #2196f3;
+            box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+            transition-delay: 0s;
+        }
+    </style>
+</head>
+<body>
+    <table id="header" border="0" width="100%"
+        cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td>             
+                         </td>
+                         <td>
+                            <font size="6">
+                                <b1>CODE TO CRACK</b1>
+                            </font>
+                        </td>
+                        <td width="15%">
+                        </td>
+                        <td>
+                            <a href="pro-Home.html" style="text-decoration:none">
+                                <font id="abc4" face="Verdana" size="5" color=black>
+                                    <a5>&nbsp;About&nbsp;</a5>
+                                </font>
+                            </a>
+                        </td>
+                        <td>
+                           |
+                        </td>
+                        <td>
+                            <a href="pro_project.html" style="text-decoration:none">
+                                <font id="abc4" face="Verdana" size="5" color=black>
+                                    <a6>&nbsp;Projects&nbsp;</a6>
+                                </font>
+                            </a>
+                        </td>
+                        <td>
+                            |
+                        </td>
+                        <td>
+                            <a href="pro_achivement.html" style="text-decoration:none">
+                                <font id="abc4" face="Verdana" size="5" color=black>
+                                    <a7>&nbsp;Achievements&nbsp;</a7>
+                                </font>
+                            </a>
+                        </td>
+                        <td>
+                            |
+                        </td>
+                        <td>
+                            <a href="pro_contact.html" style="text-decoration:none">
+                                <font id="abc4" face="Verdana" size="5" color=black>
+                                    <a8>&nbsp;Contacts&nbsp;</a8>
+                                </font>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- nav end -->
+    <!--Projects(start)-->
+    <table id="projects" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="100" align="center"
+                            valign="middle" colspan="2">
+                            <font>
+                                <div id="abc">
+                                    <a1 href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Projects
+                                    </a1>
+                                </div>
+                            </font>
+                            <hr color="#2196f3" width="90">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="10">
+                            <font face="Times New Roman"
+                                size="5" color="black">
+                                <ul>
+                                    <li>
+                                        <a href="#" style="text-decoration:none">
+                                            BMI Calculator  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style="text-decoration:none"
+                                            color="#c2c0c3">
+                                            Calculator  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style="text-decoration:none">
+                                            Calendar  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style="text-decoration:none">
+                                            ChatBot  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style="text-decoration:none">
+                                            Contact Saver  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style="text-decoration:none">
+                                            Daily Quiz  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>    
+                                        <a href="#" style="text-decoration:none">
+                                            Emplyoyee Record System  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style="text-decoration:none">
+                                            Guess the Number-Game  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>   
+                                        <a href="#" style="text-decoration:none">
+                                            Random Password Generator  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style="text-decoration:none">
+                                            Stone Paper Scissor  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#"  style="text-decoration:none">
+                                            Tic Tac Toe  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style="text-decoration:none">
+                                            Tic Tac Toe(GUI)  ➲
+                                        </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style="text-decoration:none">
+                                            ToDo App  ➲ </a>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" style=
+                                            "text-decoration:none"> Travel Management System  ➲
+                                        </a>
+                                    </li>
+                                </ul>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </font>
+                        </td>
+                        <td width="45%">
+                            <img id="prj" src="https://www.vitaltechs.net/wp-content/uploads/2021/07/Next-Coding-Project.jpg" alt="Project" width="120%">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Projects(end)-->
+    <!--Footer1(start)-->
+    <table id="footer" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <br>
+                        <td width="13%" valign="top">
+                            <a href="https://www.linkedin.com/in/purushottam-anand-3a737b1a5/" target="_blank" style="text-decoration:none">
+                                LinkedIn  ➲
+                            </a>
+                        </td>
+                        <td>
+                        |
+                        </td>
+                        <td width="13%" valign="top">
+                            <a href="https://github.com/puru0001" target="_blank" style="text-decoration:none">
+                                GitHub  ➲ 
+                            </a>
+                        </td>
+                        <td>
+                            |
+                        </td>
+                        <td width="13%" valign="top">
+                            <a href="https://www.hackerrank.com/puru22122001" target="_blank"style="text-decoration:none">
+                                HackerRank  ➲
+                            </a>
+                        </td>
+                        <td>
+                            |
+                        </td>
+                        <td width="13%" valign="top">
+                            <a href="https://auth.geeksforgeeks.org/user/puru121122/practice/"target="_blank" style="text-decoration:none">
+                                GeeksforGeeks  ➲
+                            </a>
+                        </td>
+                        <td>
+                            |
+                        </td>
+                        <td width="13%" valign="top">
+                            <a href="https://twitter.com/Puruanand08" target="_blank" style="text-decoration:none">
+                                Twitter  ➲
+                            </a>
+                        </td>
+                        <td>
+                            |
+                        </td>
+                        <td width="13%" valign="top">
+                            <a href="https://www.instagram.com/puru_n_22/" target="_blank" style="text-decoration:none">
+                                Instagram  ➲
+                            </a>
+                        </td>
+                        <td>
+                            |
+                        </td>
+                         <td width="13%" valign="top">
+                            <a href="puru121122@gmail.com" target="_blank" style="text-decoration:none">
+                              Email  ➲
+                            </a>
+                        </td>
+                        <td>
+                            |
+                        </td>
+                        <td width="13%" valign="top">
+                            <a href="#" style="text-decoration:none">
+                                Website  ➲
+                            </a>
+                            <br>
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Footer1(end)-->
+    <!--Footer2(start)-->
+    <table id="footer" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="black">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="80%" valign="top">
+                            <font face="Verdana"
+                                color="#4CAF50" size="5">
+                                <!-- ©Copyright 2050 by nobody. 
+                                All rights reserved. -->
+                            </font>
+                        </td>
+                        <td width="10%">
+                            <font face="arial" color="black" size="5">
+                                <a href="#header" style="text-decoration:none">
+                                    <font face="Verdana" color="#4CAF50" size="6">
+                                        <b>TOP ☝</b>
+                                    </font>
+                                </a>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Footer2(end)-->
+</body>
+</html>
